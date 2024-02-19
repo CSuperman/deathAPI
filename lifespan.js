@@ -1,5 +1,5 @@
-{
-  "lifespan": [
+var death = {
+  "lifespan": 
     {
       "id": 0,
       "link": https://www.today.com/health/aging/how-to-live-to-100-rcna104086,
@@ -46,6 +46,7 @@
                       These kinds of relationships pull you towards their healthy
                       habits without effort like gravity does physical objects.",
     },
-
-  ]
+  
 }
+
+module.exports = death;
