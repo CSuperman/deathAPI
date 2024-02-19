@@ -1,8 +1,8 @@
-import lifespan from 'lifespan.js'
+const death = require('./data.js')
 
-import express from 'express'
+const express = require('express')
 const app = express()
-import cors from 'cors'
+const cors = require('cors')
 const PORT = 3333
 
 app.use(cors())
@@ -14,10 +14,10 @@ app.get('/', (request, response) => {
 
 app.get('/api/:id', (request, response) => {
     const ID = request.params.id.toLowerCase()
-    if(lifespan[ID]){
-        response.json(lifespan[ID])
+    if(death[ID]){
+        response.json(death[ID])
     }else{
-        response.json(lifespan['unknown'])
+        response.json(death['unknown'])
     }
 })
 
